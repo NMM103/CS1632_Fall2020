@@ -821,8 +821,16 @@ the tests to fail this time.  BeanCounterLogicTestSolution is the solution
 implementation of BeanCounterLogicTest and most tests indeed fail for
 BeanCounterLogicTestSolution.  If BeanCounterLogicTestSolution fails a test but
 BeanCounterLogicTest passes a test, then this indicates a problem (and vice
-versa).  Read the feedback to get a hint on what the problem is.  
+versa).  Read the feedback to get a hint on what the problem is.  Try invoking
+the exact scenario on the buggy implementation to see the bug for yourself and
+figure out why your test cases are not handling it correctly.
 
+    ```
+    java -jar BeanCounterBuggy.jar 2 3 skill debug
+    ```
+
+    If you are observant, you should already see a bug in the above commandline.
+    
 ## Resources
 
 These links are the same ones posted at the end of the slides:
